@@ -8,14 +8,14 @@ class UserEntry extends ObjectDb
 	function table_fields()
 	{
 		return [
-			'int_id',
-			'ref_id' => ['class' => Entry::class, 'have_null' => true],
+			'id' => 'int_id',
+			'entry_id' => ['name' => 'ref_id', 'class' => Entry::class, 'have_null' => true],
 			'uuid',
 			'feed_id' => ['class' => Feed::class, 'have_null' => true],
 			'orig_feed_id' => ['class' => ArchivedFeed::class, 'have_null' => true],
 			'owner_uid' => ['class' => User::class, 'have_null' => true],
 			'marked',
-			'published',
+			'is_published' => 'published',
 			'tag_cache' => ['type' => 'bbcode'],
 			'label_cache' => ['type' => 'bbcode'],
 			'last_read',
