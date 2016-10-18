@@ -1,0 +1,20 @@
+{
+	"name": "balancer/bors-ttrss",
+	"type": "library",
+	"description": "Tiny-tiny RSS adapter for BORS©",
+	"keywords": ["php", "library", "rss", "bors"],
+
+	"license": "GPL-3.0",
+	"authors": [
+		{
+			"name": "Roman =Balancer= Karshiev",
+			"email": "balancer@balancer.ru"
+		}
+	],
+
+	"autoload": {
+		"psr-4": {
+			"Bal\\TtRss": "src/"
+		}
+	}
+}
