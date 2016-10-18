@@ -13,7 +13,7 @@ class Entry extends ObjectDb
 			'guid',
 			'link' => ['type' => 'bbcode'],
 			'updated',
-			'content',
+			'html' => 'content',
 			'content_hash',
 			'cached_content',
 			'no_orig_date',
