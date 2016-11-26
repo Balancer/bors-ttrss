@@ -26,4 +26,16 @@ class UserEntry extends ObjectDb
 			'last_published',
 		];
 	}
+
+	var $__entry = NULL;
+	function entry()
+	{
+		if($this->__entry)
+			return $this->__entry;
+
+		$feed_entry = Entry::load($this->entry_id());
+		$feed_entry->set_attr('feed', $this->feed());
+
+		return $this->__entry = $feed_entry;
+	}
 }
