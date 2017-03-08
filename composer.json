@@ -14,7 +14,7 @@
 
     "require": {
 		"league/html-to-markdown": "*"
-    }
+    },
 
 	"autoload": {
 		"psr-4": {
