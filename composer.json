@@ -12,6 +12,10 @@
 		}
 	],
 
+    "require": {
+		"league/html-to-markdown": "*"
+    }
+
 	"autoload": {
 		"psr-4": {
 			"Bal\\TtRss\\": "src/"
